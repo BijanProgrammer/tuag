@@ -1,7 +1,10 @@
 {
     "name": "tuag",
     "version": "1.0.0",
-    "scripts": {},
+    "scripts": {
+        "lint-staged": "lint-staged",
+        "prepare": "husky"
+    },
     "author": "BijanProgrammer",
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^7.13.0",
@@ -9,6 +12,8 @@
         "eslint": "^8.57.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-prettier": "^5.1.3",
+        "husky": "^9.0.11",
+        "lint-staged": "^15.2.7",
         "prettier": "^3.3.2",
         "typescript": "^5.4.5"
     }
