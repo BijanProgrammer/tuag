@@ -1,0 +1,11 @@
+html {
+    color-scheme: dark;
+
+    font-family: "Vazirmatn", system-ui;
+}
+
+body {
+    max-inline-size: 75rem;
+
+    margin: auto;
+}
