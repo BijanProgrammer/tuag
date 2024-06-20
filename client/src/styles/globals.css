@@ -1,11 +1,81 @@
+:root {
+    --color-white: hsl(0deg 0% 100%);
+    --color-gray-98: hsl(0deg 0% 98%);
+    --color-gray-95: hsl(0deg 0% 95%);
+    --color-gray-90: hsl(0deg 0% 90%);
+    --color-gray-80: hsl(0deg 0% 80%);
+    --color-gray-70: hsl(0deg 0% 70%);
+    --color-gray-60: hsl(0deg 0% 60%);
+    --color-gray-50: hsl(0deg 0% 50%);
+    --color-gray-40: hsl(0deg 0% 40%);
+    --color-gray-30: hsl(0deg 0% 30%);
+    --color-gray-20: hsl(0deg 0% 20%);
+    --color-gray-10: hsl(0deg 0% 10%);
+    --color-black: hsl(0deg 0% 0%);
+
+    --color-primary: hsl(210deg 100% 70%);
+    --color-primary-darker: hsl(210deg 100% 60%);
+    --color-primary-opposite: hsl(210deg 20% 10%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
 html {
     color-scheme: dark;
+    caret-color: var(--color-primary);
+
+    accent-color: var(--color-primary);
 
     font-family: "Vazirmatn", system-ui;
 }
 
+input,
+label,
+select,
+textarea,
+button,
+fieldset,
+legend,
+datalist,
+output,
+option,
+optgroup {
+    font: inherit;
+}
+
 body {
-    max-inline-size: 75rem;
+    max-inline-size: 50rem;
 
     margin: auto;
+
+    > .background {
+        img,
+        .overlay {
+            position: fixed;
+            inset: 0;
+
+            block-size: 100%;
+            inline-size: 100%;
+        }
+
+        img {
+            z-index: -2;
+
+            object-fit: cover;
+        }
+
+        .overlay {
+            background-color: var(--color-gray-10);
+            opacity: 0.7;
+
+            z-index: -1;
+        }
+    }
 }

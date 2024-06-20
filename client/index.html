@@ -11,9 +11,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet" />
 
         <link href="src/styles/globals.css" rel="stylesheet" />
+        <link href="src/styles/button.css" rel="stylesheet" />
         <link href="src/styles/header.css" rel="stylesheet" />
+        <link href="src/styles/sign-up.css" rel="stylesheet" />
     </head>
     <body>
+        <div class="background">
+            <img src="src/assets/images/lake-at-night.webp" alt="" />
+            <div class="overlay"></div>
+        </div>
         <header>
             <div class="logo">
                 <img src="src/assets/logos/bijanprogrammer.svg" alt="" />
@@ -26,6 +32,43 @@
                 </ul>
             </nav>
         </header>
-        <main></main>
+        <main>
+            <div class="sign-up">
+                <div class="heading">
+                    <h1>Creat Your Account</h1>
+                    <p>Hello there! Let’s create your account.</p>
+                </div>
+                <form>
+                    <label>
+                        <span class="title">Full Name</span>
+                        <input type="text" name="name" autocomplete="name" required />
+                    </label>
+                    <label>
+                        <span class="title">Username</span>
+                        <input type="text" name="username" autocomplete="username" required />
+                    </label>
+                    <label>
+                        <span class="title">Email</span>
+                        <input type="email" name="email" autocomplete="email" required />
+                    </label>
+                    <label>
+                        <span class="title">Phone</span>
+                        <input type="tel" name="phone" autocomplete="tel" required />
+                    </label>
+                    <label>
+                        <span class="title">Password</span>
+                        <input type="password" name="password" autocomplete="new-password" required />
+                    </label>
+                    <label>
+                        <input type="checkbox" name="agree" autocomplete="off" required />
+                        <span class="title">
+                            I agree to Platform <a href="#">Terms of Serivce</a> and
+                            <a href="#">Privacy Policy</a>
+                        </span>
+                    </label>
+                    <button>Create my account</button>
+                </form>
+            </div>
+        </main>
     </body>
 </html>
